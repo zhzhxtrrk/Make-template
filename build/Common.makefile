@@ -17,7 +17,7 @@ all : build
 %.o : %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o$@
 
-%.cpp.d : %.c
+%.cpp.d : %.cpp
 	$(CXX) $(CXXFLAGS) -MM $< > $@
 
 -include $(D)
